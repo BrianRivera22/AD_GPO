@@ -57,7 +57,7 @@ Log into Client-1 as "mydomain.com\jane_admin" and employ the Group Policy Objec
 
 Once updated, try logging into Client-1 as any one of the users within the domain, but put in the wrong password 6 times. A lockout message should appear.
 
-<h4>Enable and Disable Accounts</h4>
+<h4>2. Enable and Disable Accounts</h4>
 <p>
 <img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/4.png"/>
 </p>

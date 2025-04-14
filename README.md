@@ -34,8 +34,51 @@ This tutorial outlines the implementation of Group Policy Objects in Active Dire
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src=""/>
+<img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/1.png"/>
 </p>
 <p>
-Word
+Log into DC-1 as "mydomain.com\jane_admin", Go to Start -> Run -> gpmc.msc
 
+Edit the Default Domain Policy
+
+<p>
+<img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/2.png"/>
+</p>
+<p>
+Double click on Account Lockout Threshold and set the amount of log in attempts to 5 and then click Apply.
+
+<p>
+<img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/3.png"/>
+</p>
+<p>
+Log into Client-1 as "mydomain.com\jane_admin" and employ the Group Policy Object (GPO) by enterong "gpupdate /force" into PowerShell. Make sure to open PowerShell as administrator. Then log off the VM.
+
+Once updated, try logging into Client-1 as any one of the users within the domain, but put in the wrong password 6 times. A lockout message should appear.
+
+<p>
+<img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/4.png"/>
+</p>
+<p>
+Back in dc-1, open Active Directory Users & Computers, in _EMPLOYEES find the user that we locked out (ben.cab) in this case and unlock their account.
+
+<p>
+<img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/5.png"/>
+</p>
+<p>
+After the account is unlocked, try logging into Client-1 as that user.
+
+We can also easily reset a users password here by right clicking their name.
+
+<p>
+<img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/6b.png"/>
+</p>
+<p>
+Using client-1 (as any user), go to Start and search for Event Viewer (eventvwr.msc) but open it as an administrator. We can use "mydomain.com\jane_admin" here.
+
+<p>
+<img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/7.png"/>
+</p>
+<p>
+Event Viewer allows us to view security logs. On the left hand side go to Windows Logs -> Security
+
+Right click on Security and click Find. Enter in the user name we were trying to log in as with the wrong password earlier. We can view the failed log in attempts we made.

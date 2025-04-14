@@ -5,6 +5,8 @@
 <h1>Active Directory Group Policy Objects</h1>
 This tutorial outlines the implementation of Group Policy Objects in Active Directory with a focus on Account Lockouts.<br />
 
+<h2>Prerequisites</h2>
+Configure an on-premises Active Directory within Azure VMs using my previous project as a reference --> https://github.com/BrianRivera22/configure_AD/blob/main/README.md
 
 <h2>Environments and Technologies Used</h2>
 

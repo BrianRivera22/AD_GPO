@@ -20,15 +20,14 @@ This tutorial outlines the implementation of Group Policy Objects in Active Dire
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-1) Prepare Active Directory Infrastructure in Azure
-    - Setup Domain Controller VM (Windows Server 2022) named “DC-1”
-    - Setup Client VM (Windows 10) named “Client-1”
-2) Deploy Active Directory
-    - Create a Domain Admin user within the domain
-    - Join Client-1 to your domain (mydomain.com)
-3) Create users using PowerShell
-    - Setup Remote Desktop for non-administrative users on Client-1
-    - Create a bunch of additional users and attempt to log into client-1 with one of the users
+1) Setup an Account Lockout within your Active Directory Infrastructure   
+    - Configure Account Lockout Threshold in Group Policy
+    - Lock yourself out of a user account (fun!)
+2) Enable and Disable Accounts
+    - unlock user account
+    - observe ability to enable, disable, and reset passwords for users within Active Directory Users & Computers
+3) Observe Logs within Event Viewer
+    - Observe the logs on the client Machine
 
 
 <h2>Deployment and Configuration Steps</h2>

@@ -34,6 +34,7 @@ Configure an on-premises Active Directory within Azure VMs using my previous pro
 
 <h2>Deployment and Configuration Steps</h2>
 
+<h4>1. Setup an Account Lockout within your Active Directory Infrastructure</h4>
 <p>
 <img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/1.png"/>
 </p>
@@ -56,6 +57,7 @@ Log into Client-1 as "mydomain.com\jane_admin" and employ the Group Policy Objec
 
 Once updated, try logging into Client-1 as any one of the users within the domain, but put in the wrong password 6 times. A lockout message should appear.
 
+<h4>Enable and Disable Accounts</h4>
 <p>
 <img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/4.png"/>
 </p>
@@ -70,6 +72,7 @@ After the account is unlocked, try logging into Client-1 as that user.
 
 We can also easily reset a users password here by right clicking their name.
 
+<h4>3. Observe Logs within Event Viewer</h4>
 <p>
 <img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/6b.png"/>
 </p>

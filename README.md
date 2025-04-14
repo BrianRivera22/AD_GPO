@@ -24,7 +24,7 @@ Configure an on-premises Active Directory within Azure VMs using my previous pro
 
 1) Setup an Account Lockout within your Active Directory Infrastructure   
     - Configure Account Lockout Threshold in Group Policy
-    - Lock yourself out of a user account (fun!)
+    - Lock yourself out of a user account to ensure the policy works (fun!)
 2) Enable and Disable Accounts
     - unlock user account
     - observe ability to enable, disable, and reset passwords for users within Active Directory Users & Computers

@@ -77,7 +77,9 @@ We can also easily reset a users password here by right clicking their name.
 <img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/6b.png"/>
 </p>
 <p>
-Using client-1 (as any user), go to Start and search for Event Viewer (eventvwr.msc) but open it as an administrator. We can use "mydomain.com\jane_admin" here.
+Using client-1 (as any user), go to Start and search for Event Viewer (eventvwr.msc) but open it as an administrator. We can use "mydomain.com\jane_admin" here. 
+
+Note: This can also just be done directly on the domain controller without this step.
 
 <p>
 <img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/7.png"/>

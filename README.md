@@ -55,7 +55,7 @@ Double click on Account Lockout Threshold and set the amount of log in attempts 
 <p>
 Log into Client-1 as "mydomain.com\jane_admin" and employ the Group Policy Object (GPO) by enterong "gpupdate /force" into PowerShell. Make sure to open PowerShell as administrator. Then log off the VM.
 
-Once updated, try logging into Client-1 as any one of the users within the domain, but put in the wrong password 6 times. A lockout message should appear.
+Once updated, try logging into client-1 as any one of the users within the domain, but put in the wrong password 6 times. A lockout message should appear.
 
 <h4>2. Enable and Disable Accounts</h4>
 <p>
@@ -68,7 +68,7 @@ Back in dc-1, open Active Directory Users & Computers, in _EMPLOYEES find the us
 <img src="https://github.com/BrianRivera22/AD_GPO/blob/main/AD%20Group%20Policy%20Objects/5.png"/>
 </p>
 <p>
-After the account is unlocked, try logging into Client-1 as that user.
+After the account is unlocked, try logging into client-1 as that user.
 
 We can also easily reset a users password here by right clicking their name.
 
